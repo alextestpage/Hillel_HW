@@ -1,0 +1,15 @@
+body {
+    user-select: none;
+}
+
+.task {
+    padding: 20px;
+    margin: 10px 0px 10px 20px;
+    background-color: #FCE205;
+    max-width: 500px;
+    border-radius: 5%;
+}
+
+.true {
+    background-color: green;
+}
