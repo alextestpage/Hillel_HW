@@ -1,0 +1,42 @@
+.accordion-element {
+    border: 2px double black;
+    border-radius: 5px;
+    max-width: 33%;
+    margin: 5px;
+    user-select: none;
+}
+
+.accordion-heading {
+    color: #555;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: lightcyan;
+}
+
+.accordion-body {
+    background-color: white;
+    border-top-width: 1px;
+    color: black;
+    padding: 5px;
+    display: none;
+}
+
+.accordion-element.open .accordion-body {
+    display: block;
+}
+
+#newAccordElemBtn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.delete-btn {
+    float: right;
+}

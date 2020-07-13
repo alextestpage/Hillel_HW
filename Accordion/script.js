@@ -1,18 +1,7 @@
-var acc = document.getElementsByClassName("title");
-var i;
+const CONTAINER = document.getElementById('container');
+const NEW_ELEM_BUTTON = document.getElementById('newAccordElemBtn');
+const ACC_ELEM_TEMPLATE = document.getElementById('accordItemTemplate').innerHTML;
+const acc = new Accordion(CONTAINER, NEW_ELEM_BUTTON, ACC_ELEM_TEMPLATE);
 
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        /* Toggle between adding and removing the "active" class,
-        to highlight the button that controls the panel */
-        this.classList.toggle("active");
-
-        /* Toggle between hiding and showing the active panel */
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-        } else {
-            panel.style.display = "block";
-        }
-    });
-}
+// acc.open(0);
+// setInterval(() => acc.initClasses(), 3000);

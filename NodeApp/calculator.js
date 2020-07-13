@@ -4,6 +4,4 @@ module.exports = {
     sub: outerValue => baseValue -= outerValue,
     mult: outerValue => baseValue *= outerValue,
     div: outerValue => baseValue /= outerValue,
-
-
 };

@@ -4,36 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../common/css/normalize.css" />
+    <link rel="stylesheet" href="./accordion.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./Accordion.js" async></script>
     <script src="./script.js" async></script>
-    <title>Document</title>
+    <title>Accordion</title>
 </head>
 
 <body>
-    <div id="container" class="container">
-        <div id="list">
-            <div>
-                <div class="title">Section 1</div>
-                <div class="panel">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis autem, eius obcaecati
-                    optio libero excepturi aliquid adipisci rem ratione praesentium? Dignissimos nulla assumenda
-                    aspernatur autem temporibus nesciunt laboriosam distinctio fugit?</div>
-            </div>
-            <div>
-                <div class="title">Section 2
-                </div>
-                <div class="panel">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, quidem maxime deserunt
-                    eveniet labore inventore facere? Doloribus illo eos cupiditate tempora! Omnis sint ea provident
-                    itaque, possimus ipsum praesentium nemo.</div>
-            </div>
-            <div>
-                <div class="title">Section 3
-                </div>
-                <div class="panel">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat veniam eum fuga unde
-                    maxime et, hic voluptates, molestias consequatur corrupti quaerat quam. Odio deserunt doloribus et
-                    pariatur neque. Adipisci, dolores!</div>
-            </div>
+    <div id="container"></div>
+    <button id="newAccordElemBtn">Add New Element</button>
+
+    <script type="text/template" id="accordItemTemplate">
+        <div class="accordion-element">
+            <div class="title accordion-heading">Title <span class="delete-btn">⌫</span></div>
+            <div class="body accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, modi possimus
+                corporis consequatur nihil reiciendis maiores atque doloribus aliquid dignissimos corrupti quos iure
+                vitae minima error libero ea aliquam mollitia.</div>
         </div>
-    </div>
+        </script>
 </body>
 
 </html>

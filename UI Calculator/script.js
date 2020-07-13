@@ -31,6 +31,8 @@ function onBtnClick(e) {
             (() => display.value = display.value.substring(0, display.value.length - 1))();
             break;
         case '=':
-            (() => display.value = eval(display.value))();
+            if (display.value) {
+                (() => display.value = eval(display.value))();
+            }
     }
 }

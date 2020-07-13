@@ -60,12 +60,12 @@ function deleteTask(el) {
     el.remove();
 }
 
-function htmlToElement(html) {
-    const template = document.createElement('template');
-    html = html.trim();
-    template.innerHTML = html;
-    return template.content.firstChild;
-}
+// function htmlToElement(html) {
+//     const template = document.createElement('template');
+//     html = html.trim();
+//     template.innerHTML = html;
+//     return template.content.firstChild;
+// }
 
 function isValid(value) {
     if (value.trim() !== '') {
