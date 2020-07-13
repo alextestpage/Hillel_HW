@@ -1,0 +1,15 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "this package will run a closure calculator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "start": "node ./app.js"
+  },
+  "keywords": [
+    "testapp"
+  ],
+  "author": "Alex Motovilov",
+  "license": "ISC"
+}
