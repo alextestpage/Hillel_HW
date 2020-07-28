@@ -1,7 +1,9 @@
+let value = 0;
+
 module.exports = {
-    set: outerValue => baseValue = outerValue,
-    sum: outerValue => baseValue += outerValue,
-    sub: outerValue => baseValue -= outerValue,
-    mult: outerValue => baseValue *= outerValue,
-    div: outerValue => baseValue /= outerValue,
+    set: outerValue => value = outerValue,
+    sum: outerValue => value += outerValue,
+    sub: outerValue => value -= outerValue,
+    mult: outerValue => value *= outerValue,
+    div: outerValue => value /= outerValue,
 };
