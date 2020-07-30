@@ -32,9 +32,7 @@ function generateAlbumsHtml(album) {
 }
 
 function setFirstAlbumImages(data) {
-    if (data.length) {
-        fetchImages(data[0].id);
-    }
+    fetchImages(data[0].id);
 }
 
 function fetchImages(albumId) {
