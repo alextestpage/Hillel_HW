@@ -1,0 +1,17 @@
+body {
+    background-color: navajowhite;
+    user-select: none;
+}
+
+.album-item {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.album-item:hover {
+    border: 1px solid lightgray;
+}
+
+.title {
+    text-align: center;
+}
