@@ -31,19 +31,19 @@ function generateAlbumsHtml(album) {
     return `<div class="album-item" data-id="${album.id}">${album.id} ${album.title}.</div>`
 }
 
-function fetchImages(albumId) {
-    return fetch(getPhotosUrl(albumId))
-        .then((resp) => resp.json())
-        .then(renderImages);
-}
-
 function setFirstAlbumImages(data) {
     if (data.length) {
         fetchImages(data[0].id);
     }
 }
 
-function getPhotosUrl(albumId) {
+function fetchImages(albumId) {
+    return fetch(getImagesUrl(albumId))
+        .then((resp) => resp.json())
+        .then(renderImages);
+}
+
+function getImagesUrl(albumId) {
     return PHOTOS_URL.replace('{{id}}', albumId);
 }
 
